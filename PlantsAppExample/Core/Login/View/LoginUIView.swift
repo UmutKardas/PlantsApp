@@ -46,7 +46,8 @@ struct LoginUIView: View {
 
                 Spacer()
 
-                AuthFooterView(view: RegisterUIView(), buttonTitle: "Sign Up", description: "Don't have an account?", linkTitle: "Sign Up")
+                AuthFooterView(view: RegisterUIView(), buttonTitle: "Sign In", description: "Don't have an account?", linkTitle: "Sign Up")
+                    .padding(.bottom,30)
             }
             .toolbar(content: {
                 AuthToolBar(destination: OnboardingUIView(), toolBarItemColor: .white)
